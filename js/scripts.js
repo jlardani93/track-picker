@@ -53,23 +53,23 @@ $(document).ready(function () {
   var displayRecommendations = function() {
 
     if (cssScore >= cssScore && cssScore >= javaScore && cssScore >= phpScore && cssScore >= rubyScore && cssScore >= cSharpScore) {
-      $("#cssResult").show();
+      $("#cssResult").fadeIn("slow");
     };
 
     if (javaScore >= cssScore  && javaScore >= phpScore && javaScore >= rubyScore && javaScore >= cSharpScore) {
-      $("#javaResult").show();
+      $("#javaResult").fadeIn("slow");
     };
 
     if (phpScore >= cssScore && phpScore >= javaScore && phpScore >= rubyScore && phpScore >= cSharpScore) {
-      $("#phpResult").show();
+      $("#phpResult").fadeIn("slow");
     };
 
     if (rubyScore >= cssScore && rubyScore >= javaScore && rubyScore >= phpScore && rubyScore >= cSharpScore) {
-      $("#rubyResult").show();
+      $("#rubyResult").fadeIn("slow");
     };
 
     if (cSharpScore >= cssScore && cSharpScore >= javaScore && cSharpScore >= phpScore && cSharpScore >= rubyScore) {
-      $("#cSharpResult").show();
+      $("#cSharpResult").fadeIn("slow");
     };
 
   };
@@ -77,7 +77,7 @@ $(document).ready(function () {
   var reset = function() {
 
     $(".btn").text("Receive New Recommendation");
-    $(".result").hide();
+    $(".result").fadeOut();
     cssScore = 0;
     javaScore = 0;
     phpScore = 0;
