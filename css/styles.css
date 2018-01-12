@@ -3,10 +3,15 @@ body {
 }
 
 .jumbotron {
-  text-align: center; 
+  text-align: center;
 }
+
 #result {
   padding: 30px;
+}
+
+.result {
+  display: none;
 }
 
 img {
@@ -25,4 +30,8 @@ h2 {
 
 .form-group p, .bold {
   font-weight: bold;
+}
+
+button {
+  cursor: pointer; 
 }
