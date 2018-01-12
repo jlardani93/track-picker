@@ -90,13 +90,16 @@ $(document).ready(function () {
     reset();
 
     var name = $("#name").val();
-    console.log(name);
     var design = $("input:radio[name=design]:checked").val();
     var end = $("#end").val();
     var product = $("input:radio[name=product]:checked").val();
     var company = $("input:radio[name=company]:checked").val();
 
     getScores(name, design, end, product, company);
+
+    $("#greetingName").text(name);
+    $("#greeting").fadeIn();
+
     displayRecommendations();
     event.preventDefault();
 
