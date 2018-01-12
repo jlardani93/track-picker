@@ -12,8 +12,12 @@
     <div class="container-flex">
 
       <div class="jumbotron">
-        <h1>Programming Track Picker</h1>
+        <h1>Epicodus Track Picker</h1>
       </div>
+
+      <p class="instructions">
+        <a href="https://www.epicodus.com/what-to-expect/"><strong>Epicodus</strong></a> offers many different programming courses for both new and experienced students. These include tracks in Java and Android, PHP and Drupal, Ruby and Rails, C# and .NET, and even a design course focused on CSS. Deciding which track is best for you is a tremendously important decision. Complete the brief questionnaire below to receive a recommendation from us for which course(s) you should consider enrolling in.
+      </p>
 
       <form id="form">
 
@@ -37,10 +41,11 @@
         </div>
 
         <div class="form-group" id="formGroupEnd">
+          <p>What type of programming are you most interested in doing?</p>
           <select class="form-control" id="end">
             <option>Front-end</option>
             <option>Back-end</option>
-            <option>Both</option>
+            <option value="Both">Both front-end and back-end</option>
           </select>
         </div>
 
@@ -48,7 +53,7 @@
           <div class="radio">
             <p>What are you most interested in creating?</p>
             <label>
-              <input type="radio" name="product" value="websites"> Many websites for many different clients
+              <input type="radio" name="product" value="websites"> Many smaller websites for many different clients
             </label>
           </div>
           <div class="radio">
@@ -63,7 +68,7 @@
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="product" value="web-application"> interactive web-applications
+              <input type="radio" name="product" value="web-application"> Interactive web-applications
             </label>
           </div>
         </div>
@@ -85,8 +90,8 @@
       </form>
 
       <div class="" id="greeting">
-        <p>Hello <span id="greetingName"></span>,</p>
-        <p>Based upon your responses to the survey above, here is the course(s) we recommend you consider attending with Epicodus...</p>
+        <p class="greetingName">Hello <span id="greetingName"></span>,</p>
+        <p>Based upon your responses to the survey above, here is the course(s) we recommend you consider attending with <a href="https://www.epicodus.com/what-to-expect/"><strong>Epicodus</strong></a>...</p>
       </div>
 
       <div id="result-container">
