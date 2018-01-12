@@ -54,13 +54,21 @@ $(document).ready(function () {
 
     if (cssScore >= cssScore && cssScore >= javaScore && cssScore >= phpScore && cssScore >= rubyScore && cssScore >= cSharpScore) {
       $("#cssResult").show();
-    } else if (javaScore >= cssScore  && javaScore >= phpScore && javaScore >= rubyScore && javaScore >= cSharpScore) {
+    };
+
+    if (javaScore >= cssScore  && javaScore >= phpScore && javaScore >= rubyScore && javaScore >= cSharpScore) {
       $("#javaResult").show();
-    } else if (phpScore >= cssScore && phpScore >= javaScore && phpScore >= rubyScore && phpScore >= cSharpScore) {
+    };
+
+    if (phpScore >= cssScore && phpScore >= javaScore && phpScore >= rubyScore && phpScore >= cSharpScore) {
       $("#phpResult").show();
-    } else if (rubyScore >= cssScore && rubyScore >= javaScore && rubyScore >= phpScore && rubyScore >= cSharpScore) {
+    };
+
+    if (rubyScore >= cssScore && rubyScore >= javaScore && rubyScore >= phpScore && rubyScore >= cSharpScore) {
       $("#rubyResult").show();
-    } else if (cSharpScore >= cssScore && cSharpScore >= javaScore && cSharpScore >= phpScore && cSharpScore >= rubyScore) {
+    };
+
+    if (cSharpScore >= cssScore && cSharpScore >= javaScore && cSharpScore >= phpScore && cSharpScore >= rubyScore) {
       $("#cSharpResult").show();
     };
 
